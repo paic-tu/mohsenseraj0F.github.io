@@ -1,1 +1,46 @@
-
+	{
+		font-size: var(--font-size-medium);
+		opacity: 0;
+	}
+	
+	.sunset
+	{
+		background: url("https://assets.codepen.io/557388/sunset-reduced.jpg") no-repeat top center; 
+  		background-size: cover;
+		transform-origin: top center;
+	}
+	
+	h1, h2
+	{
+		font-size: var(--font-size-large);
+		margin: 0vmin 0 2vmin 0 ;
+		font-weight: 700;
+		display: inline;
+	}
+	
+	h3,
+	{
+		font-size: var(--font-size-medium);
+		font-weight: 400;
+		margin: 0;
+	}
+	
+	.end h2
+	{
+		margin-bottom: 50vh;
+	}
+	
+	.loading
+	{
+		position: fixed;
+		width: 100vw;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: var(--font-size-medium);
+	}
+	
+}
