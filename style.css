@@ -1,60 +1,100 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+
+
+/*=======================================================
+          
+                     G o o d L u c k 
+=========================================================*/
+
+
+
+body, html {
+    height: 100%;
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 180%;
+    color: #666;
+    text-align: center;
 }
-body{
-    height: 100vh;
+.parallax1 {
+    background-image: url(img/New\ day.png);
+    min-height: 100%;
+}
+.parallax2 {
+    background-image: url(img/New\ sun.jpg);
+    min-height: 60%;
+}
+.parallax3 {
+    background-image: url(img/Power.png);
+    min-height: 40%;
+}
+.parallax4 {
+    background-image: url(img/Birdy.jpg);
+    min-height: 100%;
+}
+
+.parallax1, .parallax2, .parallax3, .parallax4 {
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /*Important*/
+}
+
+.head {
+    position: absolute;
+    color: #fff;
+    font-size: 500%;
+    top:50%;
     width: 100%;
-    background-color: white;
+    text-transform: uppercase;
+    letter-spacing: 20px;
+    animation: drop 3.0s ease; /* Make things beautiful */
+    cursor: pointer;
 }
-.container{
-    height: 100vh;
+
+.head:hover{
+    color:transparent;
+}
+
+
+section {
+    overflow: auto;
+    padding: 50px 80px;
+
+}
+
+footer{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.loader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0px 25px;
+    background-color: #323232;
+    color: #f2f2f2;
+    height: 8vh;
+    text-align: center;
+    padding-top: 5vh;
+    padding-bottom: 1vh;
 }
 
-.loader span{
-    width: 30px;
-    height: 30px;
-    animation: up 0.9s infinite cubic-bezier(0.41, 0.02, 0, 1.15);
-}
-.circle{
-    border-radius: 50%;
-    background-color: #EDC240;
-}
-
-.triangle{
-    width: 0px; 
-    height: 0px; 
-    border-left: 20px solid transparent !important;
-    border-right: 20px solid transparent !important;
-    border-bottom: 30px solid #284D4D;
-    animation-delay: 0.2s !important;
-}
-
-
-.sqaure{
-    background-color:#DE4F2E;
-    animation-delay: 0.5s !important;
-}
-
-@keyframes up {
-    0%{
-        transform: translateY(0px);
+@media (max-width:800px) {
+    .head{
+        font-size: 200%;
     }
-    50%{
-        transform: translateY(-15px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
+   
 }
+
+
+@keyframes drop {
+    0% {
+      opacity: 0;
+      transform: translateY(-80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu'); /*IMPORTANT*/
+
+
+  /*========T H A N K  Y O U=======*/
